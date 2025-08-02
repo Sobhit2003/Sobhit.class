@@ -34,3 +34,5 @@ Backend (optional): Node.js / Flask (for full stack deployment)
 
 📌 Purpose:
 This project was created to demonstrate how secure authentication and a clean UI can come together to form a user-friendly platform for event exploration and registration, suitable for conferences, expos, workshops, and more.
+
+This is Link our website: https://eventurexcom.odoo.com/
