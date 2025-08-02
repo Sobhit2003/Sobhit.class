@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EventureX Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">EventureX</h1>
+      <nav class="space-x-4">
+        <a href="#upcoming" class="text-gray-700 hover:text-blue-500">Upcoming Events</a>
+        <a href="#past" class="text-gray-700 hover:text-blue-500">Past Events</a>
+        <a href="#all" class="text-gray-700 hover:text-blue-500">All Events</a>
+        <a href="#register" class="text-gray-700 hover:text-blue-500">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="my-10" id="upcoming">
+      <h2 class="text-xl font-semibold mb-4">Upcoming Events</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-semibold text-blue-600">Tech Summit 2025</h3>
+          <p class="text-sm">Location: Mumbai | Date: 10th Aug 2025</p>
+          <p class="mt-2 text-gray-600">Explore the future of AI, IoT, and Blockchain with industry leaders.</p>
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+          <h3 class="text-lg font-semibold text-blue-600">Agro Innovation Expo</h3>
+          <p class="text-sm">Location: Delhi | Date: 25th Aug 2025</p>
+          <p class="mt-2 text-gray-600">Showcase of smart farming and agro-based startups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-10" id="past">
+      <h2 class="text-xl font-semibold mb-4">Past Events</h2>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Startup Conclave 2024 - Bangalore</li>
+        <li>Women in Tech 2023 - Hyderabad</li>
+        <li>Green Energy Fair 2022 - Pune</li>
+      </ul>
+    </section>
+
+    <section class="my-10" id="all">
+      <h2 class="text-xl font-semibold mb-4">All Events</h2>
+      <p class="text-gray-700">A complete archive of all our listed events with filters and search (to be integrated).</p>
+    </section>
+
+    <section class="my-10" id="register">
+      <h2 class="text-xl font-semibold mb-4">Register for an Event</h2>
+      <form class="bg-white p-6 rounded shadow max-w-md">
+        <div class="mb-4">
+          <label class="block text-sm font-medium">Full Name</label>
+          <input type="text" class="mt-1 w-full border rounded px-3 py-2" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium">Email</label>
+          <input type="email" class="mt-1 w-full border rounded px-3 py-2" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-sm font-medium">Select Event</label>
+          <select class="mt-1 w-full border rounded px-3 py-2">
+            <option>Tech Summit 2025</option>
+            <option>Agro Innovation Expo</option>
+          </select>
+        </div>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>&copy; 2025 EventureX. All rights reserved.</p>
+  </footer>
+</body>
+</html>
